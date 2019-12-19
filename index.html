@@ -88,23 +88,18 @@
 										</p>
 									</div>
 									<div class="span-3">
-										<pre><code><!--HOW TO ESCAPE CHARS?-->Map<Pair<String, String>, Integer> cache = new HashMap<>();
-Pair<String, String> artistSong;
-if (rs.next()) {
+										<pre><code>Pseudocode:
+
+Map&lt;Pair&lt;String, String&gt;, Integer&gt; cache = new HashMap&lt;&gt;();
+if (SQL query returns multiple songs) {
 	do { // enter all songs into a hashmap
-		cache.put(new Pair/<>(rs.getString(1), rs.getString(2)), rs.getInt(3));
-	} while (rs.next());
+		cache.put(songTitle, songAuthor, songID);
+	} while (query.next);
 }
-ps.close();
-rs.close();
-System.out.format(formatMap, "Artist Name", "Song");
-System.out.println("-----------------------------");
-cache.forEach((key, value) -> System.out.format(formatMap, key.getKey(), key.getValue()));
-System.out.println("-----------------------------");
-if (cache.isEmpty()) {
-	System.out.println("No Results");
-	continue;
-}</code></pre>
+--Print cache 
+--User enters sontTitle and songAuthor
+--Rehash with values to get key (songID)
+--Talk with database using songID to add into a playlist</code></pre>
 									</div>
 								</div>
 							</section>
@@ -135,13 +130,14 @@ if (cache.isEmpty()) {
 						<section class="panel color1-alt">
 							<ul class="inner contact-icons color1">
 								<li class="icon brands fa-github"><a href="https://github.com/MathewLister">github.com/MathewLister</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://linkedin.com/MathewLister">linkedin.com/MathewLister</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/listermathew">linkedin.com/in/listermathew</a></li>
 								<!--email<li class="icon brands fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>-->
 								<!--phone<li class="icon brands fa-instagram"><a href="#">@untitled-tld</a></li>-->
 							</ul>
 						</section>	
 						<!------------------------------------------------------------------------------------------------------------------- CONTACTS ----------------------------------------------------------------------------------------------------------------->
-					
+		<!-- Copyright -->
+		<div class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
