@@ -22,12 +22,17 @@ body{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F8F9FA;
   color: black;
 }
 
 .topnav a.active {
   color: #F8F9FA;
+}
+
+.topnav a.active:hover{
+  background-color: #F8F9FA;
+  color: black;
 }
 
 .topnav-centered a {
@@ -60,6 +65,15 @@ body{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   justify-items: center;
+}
+
+.card{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.card:hover{
+  transform: scale(1.05);
+  transition-duration: .5s;
+	transition-property: transform;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
