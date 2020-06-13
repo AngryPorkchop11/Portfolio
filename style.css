@@ -1,6 +1,7 @@
 body{
     background-color: #212529;
     font-family: 'Roboto';
+    color: #F8F9FA;
 }
 
 .topnav {
@@ -16,6 +17,7 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
 }
 
 /* Change the color of links on hover */
@@ -26,8 +28,6 @@ body{
 
 .topnav a.active {
   color: #F8F9FA;
-  border-bottom: 1px solid #F8F9FA;
-  padding-bottom: 5px;
 }
 
 .topnav-centered a {
@@ -45,6 +45,35 @@ body{
 
 .topnav-left {
   padding-left: 20%;
+}
+
+.header{
+  padding-top: 40px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 375px) {
+  .topnav-right {
+    padding-right: 10px;
+  }  
+  .topnav-left {
+    padding-left: 10px;
+  }
+  .main{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
@@ -68,11 +97,16 @@ body{
   .topnav-left {
     padding-left: 0;
   }
+}
 
-  .topnav a.active {
-    color: #F8F9FA;
-    border-bottom: none;
-    padding: 14px 16px;  }
+@media screen and (max-width: 769px) {
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
 }
   
   
