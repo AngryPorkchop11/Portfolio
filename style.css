@@ -169,12 +169,7 @@ body{
     justify-items: center;
   }
 
-  .contact{
-    display: block;
-    grid-gap: 10px;
-    justify-items: left;
-    padding-left: 10%;
-  }
+  
 }
   
   
