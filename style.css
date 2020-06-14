@@ -97,7 +97,8 @@ body{
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .email{
@@ -116,6 +117,7 @@ body{
   transition-duration: 0.4s;
   cursor: pointer;
   padding: 16px 32px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
