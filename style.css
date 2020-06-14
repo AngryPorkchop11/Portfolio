@@ -170,7 +170,7 @@ body{
   }
 
   .contact{
-    display: inline;
+    display: -webkit-inline-flex;
     grid-gap: 10px;
     justify-items: left;
   }
