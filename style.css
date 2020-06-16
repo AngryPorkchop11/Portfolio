@@ -19,6 +19,7 @@ body{
   font-size: 17px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
   border-radius: 4px; /* Rounded borders */
+  transition-duration: .3s;
 }
 
 /* Change the color of links on hover */
@@ -81,11 +82,11 @@ body{
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   max-width: 100%;
   border-radius: 10%;
+  transition-duration: .5s;
 }
 .card:hover{
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
   transform: scale(1.05);
-  transition-duration: .5s;
 	transition-property: transform;
 }
 
@@ -114,12 +115,12 @@ body{
   box-shadow: inset 9px 9px 13px #15171a, 
             inset -9px -9px 13px #2d3338;
   font-size: 17px;
+  transition-duration: .5s;
 }
 
 textarea:focus, textarea:hover{
   outline: none;
   transform: scale(1.05);
-  transition-duration: .5s;
 	transition-property: transform;
 }
 
@@ -140,7 +141,7 @@ textarea::placeholder{
   box-shadow: inset 6px 6px 13px #15171a, 
             inset -6px -6px 13px #2d3338;
   text-indent: 5px;
-  
+  transition-duration: .5s;
 }
 
 .email::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -150,7 +151,6 @@ textarea::placeholder{
 
 .email:focus, .email:hover{
   transform: scale(1.05);
-  transition-duration: .5s;
 	transition-property: transform;
 }
 
@@ -177,6 +177,7 @@ input:-webkit-autofill:active {
   background: linear-gradient(315deg, #23282c, #1e2125);
   box-shadow:  -6px -6px 12px #171a1d, 
              6px 6px 12px #2b3035;
+  transition-duration: 2s;
 }
 .button:hover {
   border-radius: 4px; /* Rounded borders */
@@ -184,6 +185,8 @@ input:-webkit-autofill:active {
   box-shadow: inset -6px -6px 12px #171a1d, 
             inset 6px 6px 12px #2b3035;
   color: white;
+  transform: scale(1.1);
+	transition-property: transform;
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
