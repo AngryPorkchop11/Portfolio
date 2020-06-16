@@ -247,11 +247,18 @@ input:-webkit-autofill:active {
   .message{
     height:200px;
     width: 80%; /* Full width */
+
+    background: #212529;
+    box-shadow: inset 5px 5px 6px #181b1e, 
+            inset -5px -5px 6px #2a2f34;
   }
 
   .email{
     width: 50%;
     height: 120%;
+    background: #212529;
+    box-shadow: inset 5px 5px 6px #181b1e, 
+            inset -5px -5px 6px #2a2f34;
   }
 
   .button{
