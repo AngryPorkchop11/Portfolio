@@ -227,6 +227,10 @@ input:-webkit-autofill:active {
 }
 
 @media screen and (max-width: 769px) {
+  .header{
+    padding-top: 0px;
+  }
+
   .main{
     display: grid;
     grid-template-columns: 1fr;
@@ -237,7 +241,7 @@ input:-webkit-autofill:active {
 
   .contact{
     grid-template-columns: 1fr;
-    margin-left: 15px;
+    grid-gap: 25px;
   }
 
   .message, .email, .button{
@@ -246,16 +250,15 @@ input:-webkit-autofill:active {
 
   .message{
     height:200px;
-    width: 80%; /* Full width */
-
+    width: 100%; /* Full width */
     background: #212529;
     box-shadow: inset 5px 5px 6px #181b1e, 
             inset -5px -5px 6px #2a2f34;
   }
 
   .email{
-    width: 50%;
-    height: 120%;
+    width: 100%;
+    height: 200%;
     background: #212529;
     box-shadow: inset 5px 5px 8px #181b1e, 
             inset -5px -5px 8px #2a2f34;
