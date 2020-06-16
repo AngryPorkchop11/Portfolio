@@ -135,6 +135,7 @@ textarea::placeholder{
   background: #212529;
   box-shadow: inset 6px 6px 13px #15171a, 
             inset -6px -6px 13px #2d3338;
+  text-indent: 5px;
   
 }
 
