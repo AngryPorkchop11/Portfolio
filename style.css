@@ -228,10 +228,25 @@ input:-webkit-autofill:active {
   }
 
   .contact{
-    display: block;
-    grid-gap: 10px;
-    justify-items: left;
-    padding-left: 10%;
+    grid-template-columns: 1fr;
+  }
+
+  .message, .email, .button{
+    grid-column: 1;
+  }
+
+  .message{
+    height:200px;
+    width: 80%; /* Full width */
+  }
+
+  .email{
+    width: 50%;
+    height: 120%;
+  }
+
+  .button{
+    grid-row: 3;
   }
 }
   
