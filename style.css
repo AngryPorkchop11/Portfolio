@@ -3,7 +3,7 @@ body{
     font-family: 'Roboto';
     color: #F8F9FA;
 }
-
+/*-------------------------------------------------------TOP NAV-------------------------------------------------------*/
 .topnav {
   position: relative;
   overflow: hidden;
@@ -62,7 +62,7 @@ body{
 .topnav-left {
   padding-left: 20%;
 }
-
+/*-------------------------------------------------------INDEX-------------------------------------------------------*/
 .header{
   padding-top: 40px;
   text-align: center;
@@ -89,7 +89,7 @@ body{
   transform: scale(1.05);
 	transition-property: transform;
 }
-
+/*-------------------------------------------------------CONTACT-------------------------------------------------------*/
 .contact{
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -105,7 +105,7 @@ body{
   width: 60%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: none;
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 8px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
@@ -135,7 +135,7 @@ textarea::placeholder{
   grid-column: 2;
   width: 20%;
   height: 40px;
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 8px; /* Rounded borders */
   border: none;
   background: #212529;
   box-shadow: inset 6px 6px 13px #15171a, 
@@ -169,7 +169,7 @@ input:-webkit-autofill:active {
 .button{
   grid-column: 2;
   font-size: 17px;
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 8px; /* Rounded borders */
   border: none;
   height: 50px;
   width: 150px;
@@ -180,7 +180,7 @@ input:-webkit-autofill:active {
   transition-duration: 2s;
 }
 .button:hover {
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 8px; /* Rounded borders */
   background-color: #212529;
   box-shadow: inset -6px -6px 12px #171a1d, 
             inset 6px 6px 12px #2b3035;
@@ -188,7 +188,52 @@ input:-webkit-autofill:active {
   transform: scale(1.1);
 	transition-property: transform;
 }
+/*-------------------------------------------------------ABOUT-------------------------------------------------------*/
+.main-about{
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 30px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "about about about about"
+                       "left front back right";
+  grid-gap: 50px;
+  justify-items: center;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
 
+.card-about{
+  grid-area: about;
+  width: 60%;
+  height: auto;
+  margin-top: 5%;
+  border-radius: 5%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-front{
+  grid-area: front;
+  width: 60%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  justify-self: right;
+}
+
+.card-back{
+  grid-area: back;
+  width: 60%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  justify-self: left;
+}
+
+/*-------------------------------------------------------Media Queries-------------------------------------------------------*/
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 375px) {
   .topnav-right {
@@ -266,6 +311,35 @@ input:-webkit-autofill:active {
 
   .button{
     grid-row: 3;
+  }
+
+  .main-about{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "about"
+                         "front"
+                         "back";
+  }
+
+  .card-about{
+    grid-area: about;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .card-front{
+    grid-area: front;
+    justify-self: center;
+    width: 100%;
+  }
+
+  .card-back{
+    grid-area: back;
+    justify-self: center;
+    width: 100%;
   }
 }
   
