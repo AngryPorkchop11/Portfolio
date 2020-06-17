@@ -133,7 +133,7 @@ textarea::placeholder{
   color: #F8F9FA;
   font-size: 17px;
   grid-column: 2;
-  width: 15%;
+  width: 20%;
   height: 40px;
   border-radius: 4px; /* Rounded borders */
   border: none;
@@ -181,7 +181,7 @@ input:-webkit-autofill:active {
 }
 .button:hover {
   border-radius: 4px; /* Rounded borders */
-  background: #212529;
+  background-color: #212529;
   box-shadow: inset -6px -6px 12px #171a1d, 
             inset 6px 6px 12px #2b3035;
   color: white;
