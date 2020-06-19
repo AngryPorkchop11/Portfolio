@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="about.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Mathew Lister</title>
     </head>
 
@@ -20,10 +22,72 @@
             <a href="contact.html">Contact</a>
          </div>
     </div>
-    <div class="main-about">
-        <img class="card-about" src="/images/about-card.jpg" alt="About Me">
-        <img class="card-front" src="/images/front-card.jpg" alt="Front-End">
-        <img class="card-back" src="/images/back-card.jpg" alt="Back-End">
-    </div>
+        <div class="upper">
+            <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+                <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#F8F9FA" filter="url(#filter1)"/>
+              </svg>    
+        </div>
+
+        <div class="curved-top">
+            <h1>About Me</h1>
+            <p> Hi, my name is Mathew Lister. I just graduated from Seattle Pacific University with a B.A. in Computer Science. 
+                While learning to code, I became excited about web development and its limitless capabilities. 
+                I enjoy building software in teams that encourage outside of the box ideas. 
+            </p>
+            <br>
+            <p>
+                I can work with server code plus; I have a sense for UI/UX. I believe everyone should be able to use the web without discrimination. Because of that, 
+                I always strive to improve my responsive web development skills. I'm very comfortable using Git and the Linux CLI. 
+                I have developed software in teams following the Agile methodology using Jira for our scrum board. 
+                I'm actively seeking an entry-level programming position.
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+                <defs>
+                    <filter id="filter1" x="0" y="0">
+                        <feOffset result="offOut" in="SourceAlpha" dx="-5" dy="-5" />
+                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        <feDropShadow dx="0.2" dy="-0.3" stdDeviation="0.3"/>
+                 </filter>
+             </defs>
+             <path fill="#212529" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,266.7C384,299,480,277,576,229.3C672,181,768,107,864,85.3C960,64,1056,96,1152,138.7C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" filter="url(#filter1)"></path>
+            </svg>
+        </div>
+
+        <div class="curved-mid">
+            <h1><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Front-End Development</h1>
+            <p>I used these tools to design and buiuld user interfaces.</p>
+            <div class="list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Jquery</li>
+                    <li>Ajax</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <br>
+            <h1><i class="fa fa-code" aria-hidden="true"></i> Back-End Development</h1>
+            <p>I've built full stack cloud applications with this tech.</p>
+            <div class="list">
+                <ul>
+                    <li>Node.js</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+                <defs>
+                    <filter id="filter1" x="0" y="0">
+                        <feOffset result="offOut" in="SourceAlpha" dx="-5" dy="-5" />
+                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        <feDropShadow dx="0.2" dy="-0.3" stdDeviation="0.3"/>
+                 </filter>
+             </defs>
+             <path fill="#F8F9FA" fill-opacity="1" d="M0,320L48,314.7C96,309,192,299,288,298.7C384,299,480,309,576,288C672,267,768,213,864,213.3C960,213,1056,267,1152,261.3C1248,256,1344,192,1392,160L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" filter="url(#filter1)"></path>
+            </svg>
+        </div>
     </body>
 </html>

@@ -2,41 +2,51 @@ body{
     
 }
 
-.curved{
+.upper{
+    margin-bottom: -5px;
+}
+
+.curved-top{
     background: #F8F9FA;
     color: #15171a;
     text-align: center;
 }
 
-.curved h1{
-    font-size: 6rem;
+.curved-top h1{
+    font-size: 200px;
     margin-top: 0;
+    color: #212529;
 }
 
-.curved p{
+.curved-top p{
     font-size: 1.8rem;
     margin:  0 5rem 0 5rem;
 }
 
-.curved svg{
+.curved-top svg{
     display: block;
-
 }
 
 .curved-mid{
     background-color: #212529;
-}
-.upper{
-    margin-bottom: -5px;
+    text-align: center;
+    font-size: 40px;
 }
 
-.topnav svg{
+.curved-mid p{
+    font-size: 1.8rem;
+    margin:  0 5rem 0 5rem;
+}
+
+.curved-mid svg{
     display: block;
-    background-color: #F8F9FA;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    overflow: hidden;
-    transform: scaleY(-1);
+}
+
+.list{
+    text-align: center;
+    font-size: 35px;
+}
+
+.list > ul {
+    display: inline-block;
 }
