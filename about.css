@@ -1,0 +1,29 @@
+body{
+
+}
+
+.curved{
+    background: #F8F9FA;
+    color: #15171a;
+    text-align: center;
+}
+
+.curved h1{
+    font-size: 6rem;
+    margin-top: 0;
+}
+
+.curved p{
+    font-size: 1rem;
+    margin:  0 5rem 0 5rem;
+}
+
+.curved svg{
+    display: block;
+
+}
+
+.upper{
+    background-color: #F8F9FA;
+    transform: rotate(180deg);
+}
