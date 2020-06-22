@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    margin-top: 10px;
+}
+
 .upper{
     margin-bottom: -5px;
 }
@@ -20,8 +25,9 @@
     text-align: left;
 }
 
-.curved-top svg{
+svg{
     display: block;
+    width: 100%;
 }
 
 .curved-mid{
@@ -33,10 +39,6 @@
 .curved-mid p{
     font-size: 1.8rem;
     margin:  0 5rem 0 5rem;
-}
-
-.curved-mid svg{
-    display: block;
 }
 
 .list{
