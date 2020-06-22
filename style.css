@@ -74,6 +74,9 @@ body{
 .main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b c"
+	                     ". d .";
   grid-gap: 10px;
   justify-items: center;
 }
@@ -88,6 +91,22 @@ body{
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
   transform: scale(1.05);
 	transition-property: transform;
+}
+
+.drip{
+  grid-area: a;
+}
+
+.tasks{
+  grid-area: b;
+}
+
+.alg{
+  grid-area: c;
+}
+
+.portfolio{
+  grid-area: d;
 }
 /*-------------------------------------------------------CONTACT-------------------------------------------------------*/
 .contact{
@@ -188,50 +207,6 @@ input:-webkit-autofill:active {
   transform: scale(1.1);
 	transition-property: transform;
 }
-/*-------------------------------------------------------ABOUT-------------------------------------------------------*/
-.main-about{
-  display: grid;
-  grid-template-columns: 30px 1fr 1fr 30px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-                       "left front back right";
-  grid-gap: 50px;
-  justify-items: center;
-  pointer-events: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none; 
-  -khtml-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
-}
-
-.card-about{
-  grid-area: about;
-  width: 60%;
-  height: auto;
-  margin-top: 5%;
-  border-radius: 5%;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-.card-front{
-  grid-area: front;
-  width: 60%;
-  height: auto;
-  border-radius: 5%;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  justify-self: right;
-}
-
-.card-back{
-  grid-area: back;
-  width: 60%;
-  height: auto;
-  border-radius: 5%;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  justify-self: left;
-}
 
 /*-------------------------------------------------------Media Queries-------------------------------------------------------*/
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
@@ -279,9 +254,11 @@ input:-webkit-autofill:active {
   .main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
+    grid-gap: 20px;
+    grid-template-areas: "a"
+                         "b"
+                         "c"
+                         "d";
   }
 
   .contact{
@@ -311,35 +288,6 @@ input:-webkit-autofill:active {
 
   .button{
     grid-row: 3;
-  }
-
-  .main-about{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas: "about"
-                         "front"
-                         "back";
-  }
-
-  .card-about{
-    grid-area: about;
-    justify-self: center;
-    width: 100%;
-    height: auto;
-  }
-
-  .card-front{
-    grid-area: front;
-    justify-self: center;
-    width: 100%;
-  }
-
-  .card-back{
-    grid-area: back;
-    justify-self: center;
-    width: 100%;
   }
 }
   
