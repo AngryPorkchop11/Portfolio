@@ -62,6 +62,23 @@ body{
 .topnav-left {
   padding-left: 20%;
 }
+
+/*-------------------------------------------------------BOTTOM NAV-------------------------------------------------------*/
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  
+}
+a .fa {
+  color: #F8F9FA;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
 /*-------------------------------------------------------INDEX-------------------------------------------------------*/
 .header{
   padding-top: 40px;
@@ -79,6 +96,7 @@ body{
 	                     ". d .";
   grid-gap: 10px;
   justify-items: center;
+  padding-bottom: 60px;
 }
 
 .card{
@@ -289,6 +307,11 @@ input:-webkit-autofill:active {
   .button{
     grid-row: 3;
   }
+
+  a .fa {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
 }
   
   
