@@ -69,11 +69,12 @@ body{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #212529;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
   color: white;
   text-align: center;
-  
 }
+
 a .fa {
   color: #F8F9FA;
   padding-left: 50px;
