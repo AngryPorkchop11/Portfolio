@@ -94,38 +94,42 @@ a .fa {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a b c"
-	                     ". d .";
+	                     "d e .";
   grid-gap: 10px;
   justify-items: center;
   padding-bottom: 60px;
 }
 
 .card{
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0px 3px 18px -13px rgba(0,0,0,1);
   max-width: 100%;
   border-radius: 10%;
-  transition-duration: .5s;
+  transition: all 0.2s ease-out;
 }
 .card:hover, .card:active{
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
-  transform: scale(1.05);
-	transition-property: transform;
+  box-shadow: 9px 13px 11px -6px rgba(0,0,0,0.4);
+  transform: scale(1.02);
 }
 
 .drip{
   grid-area: a;
 }
 
-.tasks{
+.stonks {
   grid-area: b;
 }
 
-.alg{
+.tasks{
   grid-area: c;
 }
 
-.portfolio{
+.alg{
   grid-area: d;
+}
+
+.portfolio{
+  grid-area: e;
 }
 /*-------------------------------------------------------CONTACT-------------------------------------------------------*/
 .contact{
@@ -277,7 +281,8 @@ input:-webkit-autofill:active {
     grid-template-areas: "a"
                          "b"
                          "c"
-                         "d";
+                         "d"
+                         "e";
   }
 
   .contact{
